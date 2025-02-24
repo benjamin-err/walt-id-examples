@@ -36,7 +36,7 @@ public class VcExamples {
 
         Map<String, Object> credentialSubjectMap = new HashMap<>();
         credentialSubjectMap.put("entityIdentification", (entityIdentificationNumber));
-        credentialSubjectMap.put("issuingAuthority", issuingAuthorityId);
+        credentialSubjectMap.put("issuingAuthority", issuingAuthorityId); // the Authorities from the Scenarios
         credentialSubjectMap.put("issuingCircumstances", issuingCircumstances);
 
         JsonObject credentialSubject = JsonUtils.INSTANCE.javaToJsonObject(credentialSubjectMap);

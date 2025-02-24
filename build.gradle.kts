@@ -15,9 +15,9 @@ tasks.withType<Test>().configureEach {
 }
 
 repositories {
+    maven("https://maven.waltid.dev/releases")
     mavenLocal()
     mavenCentral()
-    maven("https://maven.waltid.dev/releases")
 }
 
 dependencies {
@@ -34,7 +34,7 @@ dependencies {
 
     // all walt.id dependencies (not required for this project)
     implementation("id.walt.mdoc-credentials:waltid-mdoc-credentials:${Versions.WALTID_VERSION}")
-    implementation("id.walt:waltid-service-commons:${Versions.WALTID_VERSION}")
+    //implementation("id.walt:waltid-service-commons:${Versions.WALTID_VERSION}")
 
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.1")
     implementation("org.jetbrains:annotations:24.1.0")
